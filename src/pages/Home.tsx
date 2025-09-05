@@ -707,7 +707,6 @@ export default function Home() {
             <div>
               <h4 className="font-semibold text-mystic-gold mb-4">Contacto</h4>
               <div className="space-y-2 text-mystic-white/80">
-                <p>📱 WhatsApp: +502 1234-5678</p>
                 <p>🕐 Horario: 24 horas</p>
                 <p>🌍 Cobertura: Toda Latinoamérica</p>
                 <p>💬 Respuesta inmediata</p>
