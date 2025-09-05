@@ -174,7 +174,7 @@ export default function Home() {
             <a href="#testimonios" className="hover:text-mystic-gold transition-colors">Testimonios</a>
             <a href="#contacto" className="hover:text-mystic-gold transition-colors">Contacto</a>
           </div>
-          <a id="Conversion" href="#" onClick={handleWhatsAppClick} className="btn-gold-fantasy text-mystic-black px-6 py-2 rounded-full font-semibold transition-all inline-block text-center">
+          <a trae-inspector-start-line="177" trae-inspector-start-column="16" trae-inspector-end-line="179" trae-inspector-end-column="18" trae-inspector-file-path="src/pages/Home.tsx" trae-inspector-static-props="%7B%22text%22%3A%22Consulta%20Gratis%22%2C%22textStartLine%22%3A%22177%22%2C%22textStartColumn%22%3A%22205%22%2C%22textEndLine%22%3A%22179%22%2C%22textEndColumn%22%3A%2213%22%2C%22cwd%22%3A%22%2Fvercel%2Fpath0%22%7D" id="Conversion" href="https://api.whatsapp.com/send/?phone=12343859528&text=Hola%2C+me+interesa+una+consulta+espiritual+gratuita&type=phone_number&app_absent=0" className="btn-gold-fantasy text-mystic-black px-6 py-2 rounded-full font-semibold transition-all inline-block text-center">
             Consulta Gratis
           </a>
         </div>
@@ -225,7 +225,7 @@ export default function Home() {
               </div>
             </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-              <a id="Conversion" href="#" onClick={handleWhatsAppClick} className="btn-gold-fantasy text-mystic-black px-8 py-4 rounded-full text-lg font-semibold transition-all inline-block text-center">
+              <a trae-inspector-start-line="228" trae-inspector-start-column="14" trae-inspector-end-line="230" trae-inspector-end-column="16" trae-inspector-file-path="src/pages/Home.tsx" trae-inspector-static-props="%7B%22text%22%3A%22%E2%9C%A8%20Consulta%20Gratuita%20Ahora%22%2C%22textStartLine%22%3A%22228%22%2C%22textStartColumn%22%3A%22205%22%2C%22textEndLine%22%3A%22230%22%2C%22textEndColumn%22%3A%2213%22%2C%22cwd%22%3A%22%2Fvercel%2Fpath0%22%7D" id="Conversion" href="https://api.whatsapp.com/send/?phone=12343859528&text=Hola%2C+me+interesa+una+consulta+espiritual+gratuita&type=phone_number&app_absent=0" className="btn-gold-fantasy text-mystic-black px-8 py-4 rounded-full text-lg font-semibold transition-all inline-block text-center">
               ✨ Consulta Gratuita Ahora
             </a>
               <a href="#servicios" className="border-2 border-mystic-gold text-mystic-gold px-8 py-4 rounded-full text-lg font-semibold hover:bg-mystic-gold hover:text-mystic-black transition-all">
@@ -444,7 +444,7 @@ export default function Home() {
                     <span className="text-lg font-bold text-mystic-gold">
                       {servicio.precio}
                     </span>
-                    <a id="Conversion" href="#" onClick={handleWhatsAppClick} className="btn-gold-fantasy text-mystic-black px-4 py-2 rounded-full text-sm font-semibold transition-all inline-block text-center">
+                    <a trae-inspector-start-line="447" trae-inspector-start-column="18" trae-inspector-end-line="449" trae-inspector-end-column="20" trae-inspector-file-path="src/pages/Home.tsx" trae-inspector-static-props="%7B%22text%22%3A%22Consultar%22%2C%22textStartLine%22%3A%22447%22%2C%22textStartColumn%22%3A%22205%22%2C%22textEndLine%22%3A%22449%22%2C%22textEndColumn%22%3A%2213%22%2C%22cwd%22%3A%22%2Fvercel%2Fpath0%22%7D" id="Conversion" href="https://api.whatsapp.com/send/?phone=12343859528&text=Hola%2C+me+interesa+una+consulta+espiritual+gratuita&type=phone_number&app_absent=0" className="btn-gold-fantasy text-mystic-black px-4 py-2 rounded-full text-sm font-semibold transition-all inline-block text-center">
                   Consultar
                     </a>
                   </div>
@@ -549,9 +549,9 @@ export default function Home() {
               </div>
               
               <a
+                trae-inspector-start-line="553" trae-inspector-start-column="12" trae-inspector-end-line="556" trae-inspector-end-column="14" trae-inspector-file-path="src/pages/Home.tsx" trae-inspector-static-props="%7B%22text%22%3A%22Enviar%20Consulta%20por%20WhatsApp%22%2C%22textStartLine%22%3A%22553%22%2C%22textStartColumn%22%3A%22205%22%2C%22textEndLine%22%3A%22556%22%2C%22textEndColumn%22%3A%2213%22%2C%22cwd%22%3A%22%2Fvercel%2Fpath0%22%7D"
                 id="Conversion"
-                href="#"
-                onClick={handleWhatsAppClick}
+                href="https://api.whatsapp.com/send/?phone=12343859528&text=Hola%2C+me+interesa+una+consulta+espiritual+gratuita&type=phone_number&app_absent=0"
                 className="w-full btn-gold-fantasy text-mystic-black px-8 py-4 rounded-full text-lg font-semibold transition-all flex items-center justify-center gap-2 cursor-pointer"
               >
                 <span>📱</span>
