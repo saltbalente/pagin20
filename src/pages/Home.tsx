@@ -174,7 +174,7 @@ export default function Home() {
             <a href="#testimonios" className="hover:text-mystic-gold transition-colors">Testimonios</a>
             <a href="#contacto" className="hover:text-mystic-gold transition-colors">Contacto</a>
           </div>
-          <button onClick={handleWhatsAppClick} className="btn-gold-fantasy text-mystic-black px-6 py-2 rounded-full font-semibold transition-all">
+          <button id="Conversion" onClick={handleWhatsAppClick} className="btn-gold-fantasy text-mystic-black px-6 py-2 rounded-full font-semibold transition-all">
             Consulta Gratis
           </button>
         </div>
@@ -225,7 +225,7 @@ export default function Home() {
               </div>
             </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-              <button onClick={handleWhatsAppClick} className="btn-gold-fantasy text-mystic-black px-8 py-4 rounded-full text-lg font-semibold transition-all">
+              <button id="Conversion" onClick={handleWhatsAppClick} className="btn-gold-fantasy text-mystic-black px-8 py-4 rounded-full text-lg font-semibold transition-all">
               ✨ Consulta Gratuita Ahora
             </button>
               <a href="#servicios" className="border-2 border-mystic-gold text-mystic-gold px-8 py-4 rounded-full text-lg font-semibold hover:bg-mystic-gold hover:text-mystic-black transition-all">
@@ -444,7 +444,7 @@ export default function Home() {
                     <span className="text-lg font-bold text-mystic-gold">
                       {servicio.precio}
                     </span>
-                    <button onClick={handleWhatsAppClick} className="btn-gold-fantasy text-mystic-black px-4 py-2 rounded-full text-sm font-semibold transition-all">
+                    <button id="Conversion" onClick={handleWhatsAppClick} className="btn-gold-fantasy text-mystic-black px-4 py-2 rounded-full text-sm font-semibold transition-all">
                   Consultar
                     </button>
                   </div>
@@ -549,6 +549,7 @@ export default function Home() {
               </div>
               
               <button
+                id="Conversion"
                 type="submit"
                 className="w-full btn-gold-fantasy text-mystic-black px-8 py-4 rounded-full text-lg font-semibold transition-all flex items-center justify-center gap-2"
               >
