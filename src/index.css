@@ -1,0 +1,277 @@
+/* Importar fuentes Space Grotesk (similar a Perplexity.ai) */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Manufacturing Consent Font */
+@font-face {
+  font-family: 'Manufacturing Consent';
+  src: url('/ManufacturingConsent-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  /* Variables CSS para fuentes */
+  --font-primary: 'FK Grotesk', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-display: 'FK Display', 'Inter', sans-serif;
+  
+  /* Variables para colores esotéricos */
+  --mystic-black: #0a0a0a;
+  --mystic-purple: #4a1a4a;
+  --mystic-gold: #d4af37;
+  --mystic-dark: #1a1a1a;
+  --mystic-white: #ffffff;
+  --mystic-red: #8b0000;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-primary);
+  font-weight: 400;
+  line-height: 1.6;
+  background-color: var(--mystic-black);
+  color: var(--mystic-white);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  text-transform: uppercase;
+  /* Protección contra clic derecho y selección */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+/* Estilos para scrollbar personalizada */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--mystic-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--mystic-gold);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b8941f;
+}
+
+/* Utilidades personalizadas */
+@layer utilities {
+  .text-gradient-gold {
+    background: linear-gradient(135deg, #d4af37 0%, #b8941f 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .glow-gold {
+    box-shadow: 0 0 10px rgba(212, 175, 55, 0.3), 0 0 20px rgba(212, 175, 55, 0.2);
+  }
+  
+  .glow-purple {
+    box-shadow: 0 0 10px rgba(74, 26, 74, 0.5), 0 0 20px rgba(74, 26, 74, 0.3);
+  }
+  
+  /* Gradientes hermosos para botones dorados */
+  .btn-gold-fantasy {
+    background: linear-gradient(135deg, #ffd700 0%, #ffb347 25%, #d4af37 50%, #b8941f 75%, #8b7355 100%);
+    border: 2px solid transparent;
+    background-clip: padding-box;
+    position: relative;
+    overflow: hidden;
+    animation: pulseGold 2s ease-in-out infinite, bounceSubtle 3s ease-in-out infinite;
+    cursor: pointer;
+  }
+  
+  .btn-gold-fantasy::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, #ffd700, #ff6b35, #d4af37, #ff6b35, #ffd700);
+    background-size: 400% 400%;
+    border-radius: inherit;
+    z-index: -1;
+    animation: borderGlow 3s ease-in-out infinite;
+  }
+  
+  .btn-gold-fantasy::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transition: left 0.6s;
+  }
+  
+  .btn-gold-fantasy:hover::after {
+    left: 100%;
+  }
+  
+  .btn-gold-fantasy:hover {
+    background: linear-gradient(135deg, #ffed4e 0%, #ffc947 25%, #e6c547 50%, #c9a96e 75%, #9d8665 100%);
+    transform: translateY(-3px) scale(1.05);
+    animation: pulseGold 1s ease-in-out infinite, wiggle 0.5s ease-in-out;
+    box-shadow: 
+      0 12px 30px rgba(212, 175, 55, 0.6),
+      0 6px 20px rgba(255, 215, 0, 0.5),
+      inset 0 1px 0 rgba(255, 255, 255, 0.3),
+      0 0 40px rgba(255, 215, 0, 0.8);
+  }
+  
+  .btn-gold-fantasy:active {
+    transform: translateY(-1px) scale(1.02);
+    animation: none;
+  }
+  
+  @keyframes borderGlow {
+    0%, 100% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+  
+  @keyframes pulseGold {
+    0%, 100% {
+      box-shadow: 
+        0 0 10px rgba(255, 215, 0, 0.5),
+        0 0 20px rgba(212, 175, 55, 0.3),
+        0 0 30px rgba(255, 215, 0, 0.2);
+    }
+    50% {
+      box-shadow: 
+        0 0 20px rgba(255, 215, 0, 0.8),
+        0 0 30px rgba(212, 175, 55, 0.6),
+        0 0 40px rgba(255, 215, 0, 0.4);
+    }
+  }
+  
+  @keyframes bounceSubtle {
+    0%, 100% {
+      transform: translateY(0px) scale(1);
+    }
+    25% {
+      transform: translateY(-2px) scale(1.02);
+    }
+    50% {
+      transform: translateY(0px) scale(1.01);
+    }
+    75% {
+      transform: translateY(-1px) scale(1.02);
+    }
+  }
+  
+  @keyframes wiggle {
+    0%, 100% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(-2deg);
+    }
+    75% {
+      transform: rotate(2deg);
+    }
+  }
+   
+   /* Manufacturing Consent Font para h1 principal */
+   h1.text-4xl.md\:text-6xl.font-display.font-bold {
+     font-family: 'Manufacturing Consent', serif !important;
+   }
+   
+   /* Protección de imágenes y videos */
+   img, video {
+     -webkit-user-select: none;
+     -moz-user-select: none;
+     -ms-user-select: none;
+     user-select: none;
+     -webkit-user-drag: none;
+     -khtml-user-drag: none;
+     -moz-user-drag: none;
+     -o-user-drag: none;
+     user-drag: none;
+     -webkit-touch-callout: none;
+     pointer-events: auto;
+     /* Prevenir guardado con clic derecho */
+     -webkit-context-menu: none;
+     context-menu: none;
+   }
+   
+   /* Protección adicional para contenedores de medios */
+   .media-container, .image-container, .video-container {
+     -webkit-user-select: none;
+     -moz-user-select: none;
+     -ms-user-select: none;
+     user-select: none;
+     -webkit-touch-callout: none;
+     position: relative;
+   }
+   
+   /* Overlay invisible para prevenir clic derecho en medios */
+   .media-container::before, .image-container::before, .video-container::before {
+     content: '';
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     z-index: 1;
+     pointer-events: none;
+   }
+   
+   /* Efecto vintage para la imagen del hero */
+   .vintage-effect {
+    filter: sepia(0.6) contrast(0.8) brightness(0.9) saturate(0.7) hue-rotate(10deg);
+    opacity: 0.95;
+    position: relative;
+  }
+  
+  .vintage-effect::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+      radial-gradient(circle at 20% 80%, rgba(139, 69, 19, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, rgba(160, 82, 45, 0.1) 0%, transparent 50%),
+      linear-gradient(45deg, rgba(139, 69, 19, 0.05) 0%, transparent 100%);
+    mix-blend-mode: multiply;
+    pointer-events: none;
+    border-radius: inherit;
+  }
+}
